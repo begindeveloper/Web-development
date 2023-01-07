@@ -207,10 +207,18 @@ section .title::after{
 
 /* Services section styling */
 .services{
+    color: #fff;
     background: #342f42;
 }
+.services .title::before{
+    background: #fff;
+}
 .services .title::after{
+    background: #342f42;
     content: "What I provide";
+}
+.services .services-content .card{
+    width: calc(33% - 20px);
 }
 
 
