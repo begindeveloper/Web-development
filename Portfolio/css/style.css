@@ -73,8 +73,6 @@
     display: none;
 }
 
-
-/*colors: cornflower,#6B7EA4; Periwinkle,#89A3D5; Serenity,#B1BACF; Ivory,#DDE1ED;
 /* home section styling */
 .home{
     display: flex;
@@ -119,14 +117,11 @@
     background: none;
 }
 
-/* about section styling */
+/*all similar content styling code*/
 section{
     padding: 100px 0;
 }
-.about{
-    font-family: 'Poppins', sans-serif;
-}
-.about .title{
+section .title{
     position: relative;
     text-align: center;
     font-size: 40px;
@@ -135,7 +130,7 @@ section{
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
-.about .title::before{
+section .title::before{
     content: "";
     position: absolute;
     bottom: 0px;
@@ -145,8 +140,7 @@ section{
     background: #121117;
     transform: translateX(-50%);
 }
-.about .title::after{
-    content: "who I am";
+section .title::after{
     position: absolute;
     bottom: -12px;
     left: 50%;
@@ -156,7 +150,16 @@ section{
     background: #fff;
     transform: translateX(-50%);
 }
-.about .about-content{
+
+/* about section styling */
+.about, .services{
+    font-family: 'Poppins', sans-serif;
+}
+.about .title::after{
+    content: "Who I Am";
+}
+.about .about-content, 
+.services .services-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -202,6 +205,13 @@ section{
     background: none;
 }
 
+/* Services section styling */
+.services{
+    background: #342f42;
+}
+.services .title::after{
+    content: "What I provide";
+}
 
 
 
