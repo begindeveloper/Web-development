@@ -226,7 +226,7 @@ section .title::after{
     cursor: pointer;
 }
 .services .services-content .card:hover{
-    background: #342f42
+    background: #6B7EA4
 }
 .services .services-content .card .box{
     transition: all 0.3s ease;
@@ -236,7 +236,11 @@ section .title::after{
 }
 .services .services-content .card i{
     font-size: 50px;
-    color:  #342f42;
+    color:#342f42;
+    transition: color 0.3s ease;
+}
+.services .services-content .card:hover i{
+    color:#fff;
 }
 .services .services-content .card .text{
     font-size: 25px;
@@ -324,6 +328,10 @@ section .title::after{
     .about .about-content .right{
         flex: 100%;
     }
+    .services .services-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 690px){
@@ -338,6 +346,9 @@ section .title::after{
     }
     .home .home-content a{
         font-size: 20px;
+    }
+    .services .services-content .card{
+        width: 100%;
     }
 }
 
