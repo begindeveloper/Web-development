@@ -160,9 +160,6 @@ section .title::after{
 }
 
 /* about section styling */
-.about, .services, .skills{
-    font-family: 'Poppins', sans-serif;
-}
 .about .title::after{
     content: "Who I Am";
 }
