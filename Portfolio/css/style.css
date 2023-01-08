@@ -248,14 +248,62 @@ section .title::after{
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-/* skills section styling */
 
+/* skills section styling */
 .skills .title::after{
     content: "what I know";
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
 }
+.skills .skills-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .right .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: #DDE1ED;
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    left: 0;
+    top: 0;
+    background: #342f42;
+}
+.skills-content .right .html::before{
+    width: 85%;
+}
+.skills-content .right .css::before{
+    width: 60%;
+}
+.skills-content .right .python::before{
+    width: 80%;
+}
+.skills-content .right .js::before{
+    width: 60%;
+}
+.skills-content .right .mysql::before{
+    width: 70%;
+}
+
 
 
 
