@@ -12,3 +12,26 @@ section{
     align-content: center;
     min-height: 100vh;
 }
+h1{
+    color:#8AAAE5;
+    text-decoration: #E2D1F9;
+    display: grid;
+}
+section .row{
+    color: #8AAAE5;
+    text-decoration: #131316;
+}
+h2{
+    background-color: #1e1e2e;
+    background-size: 40px;
+    color:aqua;
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+}
+h2 span{
+    color: #E2D1F9;
+    transition: all 0.3s ease;
+}
+p{
+    text-align: justify;
+}
