@@ -1,0 +1,36 @@
+/* Forest Green #2C5F2D, Moss Green #97BC62FF Light Olive #E7E8D1, Light Teal #A7BEAE */
+section{
+    height: 500px;
+    background-color: #2C5F2D;
+    border: solid black 1px;
+}
+
+.hero{
+    background-color: #A7BEAE;
+    height: 100vh;
+    color: black;
+    font-size: 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    width: 500px;
+    justify-content: space-around;
+    font-size: 30px;
+}
+
+li{
+    /*width: 200px;*/
+    text-decoration: none;
+}
+
+footer {
+    height: 500px;
+    background-color: #97BC62FF;
+}
