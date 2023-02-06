@@ -9,13 +9,12 @@ body{
 }
 
 section{
-    height: 500px;
-    background-color:  #526959;
-    border: solid black 1px;
+    background-color:  #a79c90;
+    /*border: solid black 1px;*/
 }
 
 .hero{
-    background-color:#252b25;
+    background-color:#927872;
     height: 100vh;
     color: rgb(253, 253, 253);
     font-size: 40px;
@@ -38,6 +37,7 @@ li{
     /*width: 200px;*/
     text-decoration: none;
 }
+
 h1{
     font-size: 70px;
     margin: 0;
@@ -46,7 +46,7 @@ h1{
 p{
     margin: 0;
     font-size: 30px;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .hero-area{
@@ -78,7 +78,7 @@ p{
 }
 
 .button:active{
-    background-color:#32a354;
+    background-color:#a7cfb3;
     color: #808080;
 }
 
@@ -88,19 +88,42 @@ p{
 
 .logo{
     height: 250px;
-    margin: 10px;
+    margin: 0px;
+    padding-bottom: 0;
 }
 
 .icons{
-    margin: 10px 0;
+    margin: 20px;
 }
 
 .socials .icons i{
-    font-size: 30px;
-    color: #B1BACF;
+    font-size: 35px;
+    color: #1a1610;
+    width: 50px;
+    height: 50px;
+    padding-right: 50px;
+}
+
+.sub-section{
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+}
+
+h2{
+    font-size: 50px;
+}
+
+.headshot-container{
+    display: flex;
+}
+
+.headshot{
+    width: 300px;
+    border-radius: 150px;
 }
 
 footer {
     height: 500px;
-    background-color: #384638;
+    background-color: #c7b38e;
 }
