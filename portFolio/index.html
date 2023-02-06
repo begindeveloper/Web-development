@@ -18,17 +18,20 @@
         <nav>
             <img class="logo" src="../portFolio/images/BW and Color logos-04.png" alt="Mary Eyeson's Logo" />
                 <ul>
-                    <li>About Me</li>
-                    <li>Projects</li>
-                    <li>Contact Me</li>
+                    <li><a href="#about-me"> About Me</a></li>
+                    <li><a href="#projects"> Projects</a></li>
+                    <li><a href="#contact-me"> Contact Me</a></li>
                 </ul>
+                <button class="hamburger" id="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
         </nav>
 
         <div class="hero-area">
             <div class="hero-text">
                 <h1>Mary Ayisah-Eyeson</h1>
                 <p>Computer Information Systems Major</p>
-                <div class="button">About Me</div>
+                <div class="button"><a href="#about-me">About Me</a></div>
             </div>
 
             <div class="socials">
@@ -49,7 +52,7 @@
     </section>
 
 
-    <section class="sub-section">
+    <section class="sub-section" id="about-me">
         <div class="information">
             <h2>About Me</h2>
             <p>Hello, my name is Mary Ayisah-Eyeson. 
@@ -64,49 +67,56 @@
     </section>
 
 
-    <section class="sub-section-alternative">
+    <section class="sub-section-alternative" id="projects">
         <h2>Projects</h2>
         <div class="project-container">
            <div class="project-card" >
-                <img class="project-image" src="" alt="Project One Image" />
-                <h3>Project One</h3>
+                <img class="project-image" src="../portFolio/images/project 1.jpg" alt="Project One Image" />
+                <h3>Information Systems</h3>
                 <p class="subtext">This is my project. This project was to test my knowledge,
                     I enjoyed making this project.</p>
                 <hr />
-                <p class="subtext">View Here</p>
+                <p class="subtext"><a class="project-link" href="https://github.com/begindeveloper/Web-development.git">View Here</a> </p>
            </div>
 
            <div class="project-card">
-            <img class="project-image" src="" alt="Project Two Image" />
-                <h3>Project Two</h3>
-                <p class="subtext">This is my project. This project was to test my knowledge,
-                    I enjoyed making this project.</p>
+            <img class="project-image" src="../portFolio/images/project 2.jpg" alt="Project Two Image" />
+                <h3>Graphic Design</h3>
+                <p class="subtext">This is my project. This project was to design and showcase skills obtained over the course of my career.
+                    I enjoyed making these projects.</p>
                 <hr />
-                <p class="subtext">View Here</p>
+                <p class="subtext"><a class="project-link" href="https://msaeyeson.myportfolio.com/home">View Here</a></p>
            </div>
 
-           <div class="project-card">
-            <img class="project-image" src="" alt="Project Three Image" />
+         <!--  <div class="project-card">
+            <img class="project-image" src="../portFolio/images/71hrBXMaNwL.jpg" alt="Project Three Image" />
                 <h3>Project Three</h3>
                 <p class="subtext">This is my project. This project was to test my knowledge,
                     I enjoyed making this project.</p>
                 <hr />
-                <p class="subtext">View Here</p>
+                <p class="subtext"><a class="project-link" href="https://msaeyeson.myportfolio.com/home">View Here</a></p>
            </div>
 
            <div class="project-card">
-            <img class="project-image" src="" alt="Project Four Image" />
+            <img class="project-image" src="../portFolio/images/71hrBXMaNwL.jpg" alt="Project Four Image" />
                 <h3>Project Four</h3>
                 <p class="subtext">This is my project. This project was to test my knowledge,
                     I enjoyed making this project.</p>
                 <hr />
-                <p class="subtext">View Here</p>
+                <p class="subtext"><a class="project-link" href="https://msaeyeson.myportfolio.com/home">View Here</a></p>
            </div>
         </div>
+        -->
     </section>
 
 
-    <footer></footer>
+    <footer id="contact-me">
+        <h2>Contact Me</h2>
+        <p>msa.eyeson@gmail.com</p>
+        <form class="form-contact">
+            <input type="text" />
+        </form>
+    </footer>
 
     <script src="app.js"></script>
 </body>
