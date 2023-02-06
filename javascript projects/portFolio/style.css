@@ -45,7 +45,7 @@ h1{
 
 p{
     margin: 0;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 300;
 }
 
@@ -116,11 +116,49 @@ h2{
 
 .headshot-container{
     display: flex;
+    align-items: center;
 }
 
 .headshot{
     width: 300px;
     border-radius: 150px;
+}
+
+
+.information a{
+    display: inline-block;
+    background: chocolate;;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 60px;
+    border-radius: 2px solid #a193c5;
+    transition: all 0.3s ease;
+}
+
+.information a:hover{
+    color: #1f7a3a;
+    background: none;
+}
+
+.project-card{
+    width: 300px;
+    height: 500px;
+    box-shadow: 5px 5px 20px rgb(104, 96, 96);
+}
+
+.project-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.sub-section-alternative{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px;
 }
 
 footer {
