@@ -33,10 +33,6 @@ ul{
     font-size: 30px;
 }
 
-ul.show{
-    display: block;
-}
-
 li{
     /*width: 200px;*/
     text-decoration: none;
@@ -101,7 +97,7 @@ p{
 }
 
 .socials .icons i{
-    font-size: 45px;
+    font-size: 50px;
     color: #1a1610;
     width: 100px;
     height: 80px;
@@ -205,6 +201,10 @@ a{
     display: none;
 }
 
+.hamburger:focus{
+    outline: 0;
+}
+
 @media only screen and (max-width: 1000px) {
     .hamburger{
         display: block;
@@ -212,9 +212,27 @@ a{
         background-color: transparent;
         color: white;
         font-size: 30px;
+        margin: 20px;
+        align-self: flex-end;
     }
 
     ul{
+        display: none;
+        background-color: #1c1d25;
+        margin: 0px;
+    }
+
+    ul.show{
+        display: block;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #1c1d25;
+    }
+
+    .logo{
         display: none;
     }
 }
