@@ -33,6 +33,10 @@ ul{
     font-size: 30px;
 }
 
+ul.show{
+    display: block;
+}
+
 li{
     /*width: 200px;*/
     text-decoration: none;
@@ -188,7 +192,8 @@ hr{
 
 .project-link{
     text-decoration: none;
-    color: #1f7a3a;
+    color: #a46614;
+    font-size: 20px;
 }
 
 a{
