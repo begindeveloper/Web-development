@@ -161,6 +161,17 @@ h2{
     padding: 80px;
 }
 
+.subtext{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.project-image{
+    margin-top: 25px;
+    width: 300px;
+    border-radius: 125px;
+}
+
 footer {
     height: 500px;
     background-color: #c7b38e;
