@@ -237,7 +237,7 @@ a{
     }
 }
 
-.switch{
+/*.switch {
     width: 80px;
     height: 40px;
     border-radius: 20px;
@@ -246,7 +246,7 @@ a{
     top: -70px;
 }
 
-.flicker{
+.flicker {
     width: 30px;
     height: 30px;
     border-radius: 15px;
@@ -262,7 +262,7 @@ a{
 .dark{
     background-color: rgb(73, 71, 71);
     transition: 0.3s;
-}
+}*/
 
 footer {
     background-color: #c7b38e;
