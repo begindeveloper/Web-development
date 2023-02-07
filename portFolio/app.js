@@ -1,8 +1,10 @@
-const hamburgerButton = document.getElementbyId('hamburger');
-const navList = document.getElementById('nav-List');
+var hamburger = document.querySelector('#hamburger');
+var navList = document.querySelector('nav-list');
 
-function toggleButton() {
-    navList.classList.toggle('show')
-}
 
-hamburgerButton.addEventListener('click', toggleButton)
+hamburger.addEventListener('click', function(){
+    document.querySelector('#nav-list').classList.toggle("show")
+})
+
+// switch flicker
+document.querySelector('.switch')
