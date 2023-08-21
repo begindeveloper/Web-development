@@ -1,5 +1,5 @@
 var hamburger = document.querySelector('#hamburger');
-var navList = document.querySelector('nav-list');
+var navList = document.querySelector('#nav-list');
 
 
 hamburger.addEventListener('click', function(){
