@@ -9,14 +9,14 @@ body{
 }
 
 section{
-    background-color:  #a79c90;
+    background-color:  #CBC3E3;
     /*border: solid black 1px;*/
 }
 
 .hero {
-    background-color:#927872;
+    background-color:#C3B1E1;
     height: 100vh;
-    color: rgb(253, 253, 253);
+    color: rgb(0, 0, 0);
     font-size: 40px;
 }
 
@@ -39,7 +39,7 @@ li{
 }
 
 h1{
-    font-size: 70px;
+    font-size: 85px;
     margin: 0;
 }
 
@@ -62,7 +62,7 @@ p{
 }
 
 .logo {
-    height: 250px;
+    height: 300px;
     margin: 0px;
     padding-bottom: 0;
 }
@@ -194,7 +194,7 @@ hr{
 
 a{
     text-decoration: none;
-    color:#fff
+    color:#ffffff
 }
 
 .hamburger{
@@ -210,7 +210,7 @@ a{
         display: block;
         border: 0;
         background-color: transparent;
-        color: white;
+        color: black;
         font-size: 30px;
         margin: 20px;
         align-self: flex-end;
@@ -229,7 +229,7 @@ a{
     nav{
         display: flex;
         flex-direction: column-reverse;
-        background-color: #4e5064;
+        background-color: #a6a9cb;
     }
 
     .logo{
@@ -277,7 +277,7 @@ a{
 }
 #contact-me .row i{
     font-size: 30px;
-    color: whitesmoke;
+    color: #301934;
 }
 #contact-me .info .head{
     font-weight: 700;
@@ -288,8 +288,8 @@ a{
 }
 
 footer {
-    background-color: #c7b38e;
-    color: white;
+    background-color: #BDB5D5;
+    color: black;
     text-align: center;
     padding: 80px;
 }
