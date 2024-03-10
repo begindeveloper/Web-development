@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Open+Sans:wght@300;400&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/fa3a317125.js" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
@@ -24,6 +23,7 @@
                 <img class="logo" src="../Web-development/images/BW and Color logos-04.png" alt="Mary Eyeson's Logo" />
                     <ul id="nav-list">
                         <li><a href="#about-me"> About Me</a></li>
+                        <li><a href="#certifications"> Certifications & License</a></li>
                         <li><a href="#projects"> Projects</a></li>
                         <li><a href="#contact-me"> Contact Me</a></li>
                     </ul>
@@ -76,21 +76,45 @@
             </div>
         </section>
 
+ <!-- CERTIFICATIONS -->
+    <!-- CERTIFICATIONS -->
+    <section class="sub-section" id="certifications">
+        <h2>Certifications & Licenses</h2>
+        <div class="certification-container">
+            <div class="certification-card">
+                <img class="certification-image" src="..//Web-development/images/simplilearn.jpeg" alt="Certification 1" />
+                <div class="certification-details">
+                    <h3>Tableau Data Visualization Basics Tutorial</h3>
+                    <div><p class="subtext">Issued March 2024</p></div>
+                    <hr />
+                    <p class="subtext">Skills: Tableau; Data Analysis; 
+                        Data Visualization; Business Analytics</p>
+                </div>
+            </div>
+
+            <div class="certification-container">
+            <div class="certification-card">
+                <img class="certification-image" src="./images/blue-belt-image-300x300.webp" alt="Certification 1" />
+                <div class="certification-details">
+                    <h3>Innovation Engineering Blue Belt</h3>
+                    <div><p class="subtext">Issued July 1, 2022</p></div>
+                    <hr />
+                    <p class="subtext">Skills: Innovation Strategy; System Improvement;
+                        Creative Problem Solving; Meaningfully Unique Ideas
+                    </p>
+                </div>
+            </div>
+            <!-- Add more certification cards as needed -->
+        </div>
+    </section>
+
+
+
 
 <!--PROJECTS-->
         <section class="sub-section-alternative" id="projects">
             <h2>Projects</h2>
             <!--Project list begins-->
-            <div class="project-container">
-                <div class="project-card" >
-                        <img class="project-image" src="/Web-development/images/dataScience.jpg" alt="all projects" />
-                        <h3>Data Science</h3>
-                        <p class="subtext">These are my projects. These projects were built to test my knowledge, and skills.
-                            I enjoyed making these projects.</p>
-                        <hr />
-                        <p class="subtext"><a class="project-link" href="dataScience.html">Coming Soon</a></p>
-                    </div>
-
             <div class="project-container">
             <div class="project-card" >
                     <img class="project-image" src="../Web-development/images/project 1.jpg" alt="all projects" />
@@ -101,6 +125,16 @@
                     <p class="subtext"><a class="project-link" href="tech.html">View Here</a></p>
                 </div>
 
+                <div class="project-container">
+                <div class="project-card" >
+                            <img class="project-image" src="/Web-development/images/dataScience.jpg" alt="all projects" />
+                            <h3>Data Science</h3>
+                            <p class="subtext">These are my projects. These projects were built to test my knowledge, and skills.
+                                I enjoyed making these projects.</p>
+                            <hr />
+                            <p class="subtext"><a class="project-link" href="dataScience.html">Coming Soon</a></p>
+                    </div>
+
             <div class="project-container">
             <div class="project-card" >
                     <img class="project-image" src="/Web-development/images/game.jpg" alt="all projects" />
@@ -110,11 +144,10 @@
                     <hr />
                     <p class="subtext"><a class="project-link" href="game.html">View Here</a></p>
                 </div>
-
         </section>
-        
-<!--FOOTER-->        
-<footer id="contact-me">
+
+<!--Footer Section-->
+<footer id="contact-me" class="footer">
     <div class="footer-container">
         <h2>Contact Me</h2>
         <div class="icons">
@@ -138,14 +171,12 @@
                 <i class="fa-regular fa-envelope"></i>
                 <address>
                     <div class="head">Email</div>
-                    <div class="sub-title">msa.eyeson@gmail.com</div>
+                    <div class="sub-title"><a href="mailto:msa.eyeson@gmail.com">msa.eyeson@gmail.com</a></div>
                 </address>
             </div>
         </div>
     </div>
 </footer>
-
-
     <script  type="text/javascript" src="../Web-development/app.js"></script>
 </body>
 </html>

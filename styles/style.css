@@ -237,6 +237,51 @@ a{
     }
 }
 
+/* CERTIFICATIONS */
+#certifications {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px;
+  }
+  
+  .certification-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    .certification-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  
+  .certification-card {
+    width: 300px;
+    height: 500px;
+    box-shadow: 5px 5px 20px rgb(104, 96, 96);
+    margin: 10px;
+  }
+  
+  /*.certification-details {
+    padding: 20px;
+  }*/
+  
+  .certification-image {
+    margin-top: 25px;
+    height: 200px;
+    width: 250px;
+    border-radius: 125px;
+  }
+  
+  .certification-link {
+    text-decoration: none;
+    color: #a46614;
+    font-size: 20px;
+  }
+  
+  
 /*.switch {
     width: 80px;
     height: 40px;
@@ -284,11 +329,11 @@ a{
     color: chocolate;
 }
 #contact-me.info .sub-title{
-    color: #DDE1ED;
+    color: #000000;
 }
 
 footer {
-    background-color: #BDB5D5;
+    background-color: #978abe;
     color: black;
     text-align: center;
     padding: 80px;
