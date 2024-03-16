@@ -23,20 +23,25 @@ section{
 nav {
     display: flex;
     justify-content: space-between;
-}
-
-ul{
+  }
+  
+  ul {
     display: flex;
     list-style-type: none;
-    width: 500px;
     justify-content: space-around;
-    font-size: 30px;
-}
-
-li{
-    /*width: 200px;*/
+    font-size: 25px;
+  }
+  
+  li {
     text-decoration: none;
-}
+    margin: 10px; /* Add margin to create space between list items */
+  }
+  
+  li:hover {
+    color: #483983; /* Change the text color on hover */
+  }
+  
+  
 
 h1{
     font-size: 85px;
@@ -309,32 +314,38 @@ a{
     transition: 0.3s;
 }*/
 
-#contact-me.left .icons{
-    margin: 10px 0;
-}
-#contact-me.row{
+#contact-me.left .icons {
+    margin: 20px 0; /* Increase the margin to create more space */
+  }
+  
+  #contact-me.row {
     display: flex;
     height: 65px;
     align-items: center;
-}
-#contact-me.icons .row .info{
-    margin-left: 30px;
-}
-#contact-me .row i{
+  }
+  
+  #contact-me.icons .row .info {
+    margin-left: 40px; /* Increase the margin to create more space */
+  }
+  
+  #contact-me .row i {
     font-size: 30px;
     color: #301934;
-}
-#contact-me .info .head{
+  }
+  
+  #contact-me .info .head {
     font-weight: 700;
     color: chocolate;
-}
-#contact-me.info .sub-title{
+  }
+  
+  #contact-me.info .sub-title {
     color: #000000;
-}
-
-footer {
+  }
+  
+  footer {
     background-color: #978abe;
     color: black;
     text-align: center;
-    padding: 80px;
-}
+    padding: 100px; /* Increase the padding to add more space */
+  }
+  
