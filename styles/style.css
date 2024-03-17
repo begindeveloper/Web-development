@@ -25,22 +25,21 @@ nav {
     justify-content: space-between;
   }
   
-  ul {
+ul {
     display: flex;
     list-style-type: none;
     justify-content: space-around;
     font-size: 25px;
   }
   
-  li {
+li {
     text-decoration: none;
     margin: 10px; /* Add margin to create space between list items */
   }
   
-  li:hover {
+li:hover a {
     color: #483983; /* Change the text color on hover */
   }
-  
   
 
 h1{
@@ -73,19 +72,28 @@ p{
 }
 
 .button{
+    display: inline-block;
     width: 200px;
     height: 50px;
-    border-radius: 30px;
+    border-radius: 60px;
+    border-radius: 2px solid #a193c5;
     background-color: chocolate;
+    color: #fff;
     text-align: center;
     font-size: 30px;
-    font-weight: 300;
-    padding-top: 5px;
+    font-weight: 500;
+    padding: 10px 30px;
     margin-top: 20px;
+    transition: all 0.3s ease;
 }
 
 .button:hover{
-    background-color: #1f7a3a;
+    background-color: #C3B1E1;
+}
+
+.button a:hover{
+    color: #3e2b8a;
+    background: none;
 }
 
 .button:active{
@@ -134,7 +142,7 @@ h2{
     display: inline-block;
     background: chocolate;;
     color: #fff;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 500;
     padding: 10px 30px;
     margin-top: 20px;
@@ -144,7 +152,7 @@ h2{
 }
 
 .information a:hover{
-    color: #1f7a3a;
+    color: #3e2b8a;
     background: none;
 }
 
@@ -314,38 +322,60 @@ a{
     transition: 0.3s;
 }*/
 
-#contact-me.left .icons {
-    margin: 20px 0; /* Increase the margin to create more space */
-  }
-  
-  #contact-me.row {
-    display: flex;
-    height: 65px;
-    align-items: center;
-  }
-  
-  #contact-me.icons .row .info {
-    margin-left: 40px; /* Increase the margin to create more space */
-  }
-  
-  #contact-me .row i {
-    font-size: 30px;
-    color: #301934;
-  }
-  
-  #contact-me .info .head {
-    font-weight: 700;
-    color: chocolate;
-  }
-  
-  #contact-me.info .sub-title {
-    color: #000000;
-  }
-  
-  footer {
+/* Footer Styles */
+#contact-me.footer {
     background-color: #978abe;
     color: black;
     text-align: center;
-    padding: 100px; /* Increase the padding to add more space */
+    padding: 50px; /* Adjusted padding for better spacing */
   }
   
+  .footer h2 {
+    color: #000000;
+    margin-bottom: 20px;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .info-wrap {
+    display: flex;
+    flex-direction: column; /* Set the direction to column to display items in a column */
+    align-items: center; /* Center align the items */
+  }
+  
+  .dbox {
+    width: 100%; /* Set the width to 100% for full width */
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column; /* Set the direction to column for individual items */
+    align-items: center; /* Center align the items */
+  }
+  
+  .icon {
+    font-size: 24px;
+    color: #0d0d0d;
+  }
+  
+  .text {
+    padding-top: 10px; /* Add padding to separate the icon and text */
+    color: #151515;
+    text-align: center; /* Align the text to the center */
+  }
+  
+  .text p {
+    margin: 0;
+  }
+
+  .text:hover a{
+    color: #483983; /* Change the text color on hover */
+}
+  
+  /* Responsive Styles */
+  @media (min-width: 768px) {
+    .dbox {
+      width: 45%; /* Adjusted width for better spacing on larger screens */
+    }
+  }
