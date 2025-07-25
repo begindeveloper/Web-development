@@ -10,8 +10,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Open+Sans:wght@300;400&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/fa3a317125.js" crossorigin="anonymous"></script>
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </head>
 
+    
 <body>
     <section class="hero fade-in">
         <nav>
@@ -53,7 +61,6 @@
 
 <!--ABOUT ME-->
     <section class="sub-section fade-in" id="about-me">
-    <section class="sub-section" id="about-me">
       <div class="about-container">
         <div class="headshot-container">
           <img class="headshot" src="./images/headshot.JPG" alt="Mary's Headshot" />
@@ -78,35 +85,70 @@
 
 
     <!-- CERTIFICATIONS -->
-    <section class="sub-section" id="certifications">
-        <h2>Certifications</h2>
-
-        
-            <div class="certification-container">
-                <div class="certification-card">
-                    <img class="certification-image" src="https://media.licdn.com/dms/image/D560BAQGGrXUwk62uBQ/company-logo_200_200/0/1720817582870/theforage_logo?e=1730332800&v=beta&t=w0a9C-B9-1QJuzLXTqH3Ly4NbdRVwG5-ThlwFHqG-J8" alt="Certification 2" />
-                    <div class="certification-details">
-                        <h3>British Airways Data Science Completion Certificate </h3>
-                        <div><p class="subtext">Issued July 2024</p></div>
-                        <hr />
-                        <p class="subtext">Skills: Data Manipulation· Data Science · Data Visualization · Python · Machine Learning · Powerpoint
-                        </p>
-                    </div>
+    <section class="sub-section fade-in" id="certifications">
+              <h2>Certifications</h2>
+            
+              <div class="certification-container">
+            
+                <!-- PTCB -->
+                <div class="certification-card" data-aos="fade-up">
+                  <img class="certification-image" src="https://ptcb.org/wp-content/uploads/2025/02/ptcb_logo.png" alt="PTCB Certified Pharmacy Technician logo" />
+                  <div class="certification-details">
+                    <h3><i class="fa-solid fa-capsules"></i> PTCB Certified Pharmacy Technician</h3>
+                    <p class="subtext">Issued July 2025 – July 2027</p>
+                    <hr />
+                    <p class="subtext">Skills: Pharmacy · Patient Safety · Medical Terminology · Medication Therapy Management</p>
+                  </div>
                 </div>
-
-        <div class="certification-container">
-                <div class="certification-card">
-                    <img class="certification-image" src="./images/isc2.jpeg" alt="Certification 2" />
-                    <div class="certification-details">
-                        <h3>ISC2 Certified in Cybersecurity</h3>
-                        <div><p class="subtext">Issued June 2024</p></div>
-                        <hr />
-                        <p class="subtext">Skills: Cybersecurity · Cybersecurity Tools · Cybersecurity Incident Response · Networking · Network Security
-                        </p>
-                    </div>
+            
+                <!-- AWS -->
+                <div class="certification-card" data-aos="fade-up">
+                  <img class="certification-image" src="images/awsdownload.jpeg" alt="AWS Certification logo" />
+                  <div class="certification-details">
+                    <h3><i class="fa-brands fa-aws"></i> AWS Academy Graduate – Machine Learning</h3>
+                    <p class="subtext">Issued May 2025</p>
+                    <hr />
+                    <p class="subtext">Skills: Machine Learning · AWS · Infrastructure Management · Networking · Security</p>
+                  </div>
                 </div>
+            
+                <!-- ISC2 -->
+                <div class="certification-card" data-aos="fade-up">
+                  <img class="certification-image" src="./images/isc2.jpeg" alt="ISC2 Certified in Cybersecurity logo" />
+                  <div class="certification-details">
+                    <h3><i class="fa-solid fa-shield-halved"></i> ISC2 Certified in Cybersecurity</h3>
+                    <p class="subtext">Issued June 2024</p>
+                    <hr />
+                    <p class="subtext">Skills: Cybersecurity · Incident Response · Network Security · Risk Management</p>
+                  </div>
+                </div>
+            
+                <!-- Innovation Engineering -->
+                <div class="certification-card" data-aos="fade-up">
+                  <img class="certification-image" src="images/blue-belt-image-300x300.webp" alt="Innovation Engineering Blue Belt logo" />
+                  <div class="certification-details">
+                    <h3><i class="fa-solid fa-lightbulb"></i>Innovation Engineering Blue Belt</h3>
+                    <p class="subtext">Issued July 2022</p>
+                    <hr />
+                    <p class="subtext">Skills: Innovation Strategy · System Improvement · Creative Problem Solving · Meaningful Ideas</p>
+                  </div>
+                </div>
+            
+              </div>
+        </section>
 
-            <div class="certification-container">
+        <!-- <div class="certification-container">
+            <div class="certification-card">
+                <img class="certification-image" src="images/simplilearn.jpeg" alt="Certification 3" />
+                <div class="certification-details">
+                    <h3>Tableau Data Visualization Basics Tutorial</h3>
+                    <div><p class="subtext">Issued March 2024</p></div>
+                    <hr />
+                    <p class="subtext">Skills: Tableau · Data Analysis · Data Visualization · Business Analytics</p>
+                </div>
+            </div> 
+                    
+                     <div class="certification-container">
                 <div class="certification-card">
                     <img class="certification-image" src="https://media.licdn.com/dms/image/D560BAQGGrXUwk62uBQ/company-logo_200_200/0/1720817582870/theforage_logo?e=1730332800&v=beta&t=w0a9C-B9-1QJuzLXTqH3Ly4NbdRVwG5-ThlwFHqG-J8" alt="Certification 2" />
                     <div class="certification-details">
@@ -117,81 +159,75 @@
                         </p>
                     </div>
                 </div>
-            
-                <div class="certification-container">
-                    <div class="certification-card">
-                        <img class="certification-image" src="images/awsdownload.jpeg" alt="Certification 1" />
-                        <div class="certification-details">
-                            <h3>AWS Cloud Practitioner Essential</h3>
-                            <div><p class="subtext">Issued March 2024</p></div>
-                            <hr />
-                            <p class="subtext">Skills: Cloud Computing · Amazon Web Services (AWS) · Global Infrastructure Management · Networking · Security
-                            </p>
-                        </div>
+                    
+                     <div class="certification-container">
+                <div class="certification-card">
+                    <img class="certification-image" src="https://media.licdn.com/dms/image/D560BAQGGrXUwk62uBQ/company-logo_200_200/0/1720817582870/theforage_logo?e=1730332800&v=beta&t=w0a9C-B9-1QJuzLXTqH3Ly4NbdRVwG5-ThlwFHqG-J8" alt="Certification 2" />
+                    <div class="certification-details">
+                        <h3>British Airways Data Science Completion Certificate </h3>
+                        <div><p class="subtext">Issued July 2024</p></div>
+                        <hr />
+                        <p class="subtext">Skills: Data Manipulation· Data Science · Data Visualization · Python · Machine Learning · Powerpoint
+                        </p>
                     </div>
-
-        <div class="certification-container">
-            <div class="certification-card">
-                <img class="certification-image" src="images/simplilearn.jpeg" alt="Certification 3" />
-                <div class="certification-details">
-                    <h3>Tableau Data Visualization Basics Tutorial</h3>
-                    <div><p class="subtext">Issued March 2024</p></div>
-                    <hr />
-                    <p class="subtext">Skills: Tableau · Data Analysis · Data Visualization · Business Analytics</p>
-                </div>
-            </div>
-
-            <div class="certification-container">
-            <div class="certification-card">
-                <img class="certification-image" src="images/blue-belt-image-300x300.webp" alt="Certification 4" />
-                <div class="certification-details">
-                    <h3>Innovation Engineering Blue Belt</h3>
-                    <div><p class="subtext">Issued July 1, 2022</p></div>
-                    <hr />
-                    <p class="subtext">Skills: Innovation Strategy · System Improvement · Creative Problem Solving · Meaningfully Unique Ideas</p>
-                </div>
-            </div>
+                </div>  -->
             <!-- Add more certification cards as needed -->
+
+
+<!-- PROJECTS -->
+<section class="sub-section-alternative" id="projects">
+  <h2>Projects</h2>
+  <div class="project-container">
+
+    <a href="mini_pages/tech.html" class="project-card-link" data-aos="fade-up" data-aos-delay="100">
+      <div class="project-card">
+        <img class="project-image" src="images/project 1.jpg" alt="Information Systems" />
+        <h3>Information Systems</h3>
+        <p class="subtext">Built to test my technical knowledge and project delivery in systems and UI/UX.</p>
+        <div class="tag-container">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JS</span>
         </div>
-    </section>
+        <hr />
+        <p class="subtext">View Project</p>
+      </div>
+    </a>
+
+    <a href="mini_pages/dataScience.html" class="project-card-link" data-aos="fade-up" data-aos-delay="200">
+      <div class="project-card">
+        <img class="project-image" src="images/dataScience.jpg" alt="Data Science" />
+        <h3>Data Science and Analysis</h3>
+        <p class="subtext">Projects in analytics, data wrangling, and machine learning.</p>
+        <div class="tag-container">
+          <span class="tag">Python</span>
+          <span class="tag">SQL</span>
+          <span class="tag">Tableau</span>
+        </div>
+        <hr />
+        <p class="subtext">View Project</p>
+      </div>
+    </a>
+
+    <a href="mini_pages/game.html" class="project-card-link" data-aos="fade-up" data-aos-delay="300">
+      <div class="project-card">
+        <img class="project-image" src="images/game.jpg" alt="Game Development" />
+        <h3>Game Development</h3>
+        <p class="subtext">A collection of browser games using simple logic, creativity, and JavaScript.</p>
+        <div class="tag-container">
+          <span class="tag">JavaScript</span>
+          <span class="tag">HTML5</span>
+          <span class="tag">Canvas API</span>
+        </div>
+        <hr />
+        <p class="subtext">View Project</p>
+      </div>
+    </a>
+
+  </div>
+</section>
 
 
-
-
-<!--PROJECTS-->
-        <section class="sub-section-alternative" id="projects">
-            <h2>Projects</h2>
-            <!--Project list begins-->
-            <div class="project-container">
-            <div class="project-card" >
-                    <img class="project-image" src="images/project 1.jpg" alt="all projects" />
-                    <h3>Information Systems</h3>
-                    <p class="subtext">These are my information systems projects. These projects were built to test my knowledge, and skills.
-                        I enjoyed making these projects.</p>
-                    <hr />
-                    <p class="subtext"><a class="project-link" href="mini_pages/tech.html">View Here</a></p>
-                </div>
-
-                <div class="project-container">
-                <div class="project-card" >
-                            <img class="project-image" src="images/dataScience.jpg" alt="all projects" />
-                            <h3>Data Science and Analysis</h3>
-                            <p class="subtext">These are my data science projects. These projects were built to test my knowledge, and skills.
-                                I enjoyed making these projects.</p>
-                            <hr />
-                            <p class="subtext"><a class="project-link" href="mini_pages/dataScience.html">View Here</a></p>
-                    </div>
-
-            <div class="project-container">
-            <div class="project-card" >
-                    <img class="project-image" src="images/game.jpg" alt="all projects" />
-                    <h3>Game Development</h3>
-                    <p class="subtext">These are my game development projects. These projects were built to test my knowledge, and skills.
-                        I enjoyed making these projects.</p>
-                    <hr />
-                    <p class="subtext"><a class="project-link" href="mini_pages/game.html">View Here</a></p>
-                </div>
-        </section>
 
 <!--FOOTER-->
         <footer id="contact-me" class="footer">
