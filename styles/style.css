@@ -171,7 +171,7 @@ h2{
     background: none;
 }
 
-
+/* project */
 .project-category {
   margin-bottom: 60px;
 }
@@ -232,6 +232,16 @@ h2{
   margin-top: 10px;
 }
 
+.tag {
+  display: inline-block;
+  background: #a46614;
+  color: #fff;
+  padding: 4px 8px;
+  margin: 3px;
+  font-size: 12px;
+  border-radius: 10px;
+}
+
 .tags span {
   display: inline-block;
   background: #a46614;
@@ -250,9 +260,10 @@ h2{
   padding: 80px;
 }
 
-.subtext {
-  font-size: 15px;
-  font-weight: 300;
+.project-card .subtext {
+  font-size: 14px;
+  margin: 10px 0;
+  color: #333;
 }
 
 hr {
