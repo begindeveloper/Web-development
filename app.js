@@ -29,8 +29,7 @@ document.querySelector('.switch')
 
 // smooth animations
 const faders = document.querySelectorAll('.fade-in');
-
-  const appearOnScroll = new IntersectionObserver((entries, observer) => {
+const appearOnScroll = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
