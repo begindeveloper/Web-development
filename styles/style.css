@@ -370,6 +370,11 @@ hr {
   font-size: 20px;
 }
 
+.subtext {
+  font-size: 14px;
+  color: #555;
+}
+
 .dark-mode #certifications {
   background-color: #1e1e2f;
   color: #f2f2f2;
