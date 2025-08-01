@@ -43,6 +43,38 @@ const appearOnScroll = new IntersectionObserver((entries, observer) => {
   });
 
 
+  function filterProjects(category) {
+    const allCards = document.querySelectorAll('.project-card');
+    allCards.forEach(card => {
+      if (category === 'all' || card.classList.contains(category)) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+
+    const buttons = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.project-card');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        buttons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        cards.forEach(card => {
+          if (filter === 'all' || card.classList.contains(filter)) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+
+
 
 //const faders = document.querySelectorAll('.fade-in');const appearOnScroll = new IntersectionObserver((entries, observer) => {entries.forEach(entry => {if (entry.isIntersecting) {entry.target.classList.add('visible'); observer.unobserve(entry.target);}});}, {threshold: 0.1});faders.forEach(fader => {
     //appearOnScroll.observe(fader);
