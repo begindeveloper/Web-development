@@ -1,96 +1,96 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Projects | Eyeson </title>
     <link rel="stylesheet" href="styles/style.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Open+Sans:wght@300;400&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <!-- AOS CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-        <!-- AOS CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/dataAnaly.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
-  <nav>
-    <a href="index.html" class="button">← Back to Home</a>
-    <ul>
-      <li><a href="#all">All</a></li>
-      <li><a href="#excel">Excel</a></li>
+  <nav class="navbar">
+    <ul class="nav-links">
       <li><a href="#ml">Machine Learning</a></li>
-      <li><a href="#viz">Visualization</a></li>
+      <li><a href="#excel">Excel Projects</a></li>
+      <li><a href="#viz">Data Viz</a></li>
+      <li><a href="index.html">Back to Home</a></li>
     </ul>
   </nav>
 
-  <main>
-    <section id="all" class="project-category">
-      <h3>All Projects</h3>
+  <header class="filters center">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="ml">ML</button>
+    <button class="filter-btn" data-filter="excel">Excel</button>
+    <button class="filter-btn" data-filter="viz">DataViz</button>
+  </header>
+
+  <main class="project-section">
+    <div class="project-category" id="ml">
+      <h2>Machine Learning Projects</h2>
       <div class="project-container">
-        <a class="project-card" href="https://github.com/begindeveloper/Tour_De_France-Analysis" target="_blank">
-          <img class="project-image" src="https://images.seeklogo.com/logo-png/44/1/tour-de-france-logo-png_seeklogo-442273.png" alt="Tour de France">
-          <h4>Tour de France Analysis</h4>
-          <p class="subtext">Analyzed decades of race data to uncover patterns and stats.</p>
+        <a class="project-card ml" data-aos="fade-up" href="https://github.com/begindeveloper/Titanic-Machine-Learning-from-Disaster" target="_blank">
+          <img class="project-image" src="https://cdn-icons-png.flaticon.com/512/4596/4596976.png" alt="Titanic ML" />
+          <h4>Titanic ML</h4>
+          <p>Predict survival using logistic regression & decision trees.</p>
           <div class="tags">
+            <span class="tag">ML</span>
             <span class="tag">Python</span>
-            <span class="tag">DataViz</span>
           </div>
         </a>
 
-        <a class="project-card" href="https://github.com/begindeveloper/Hospital_Readmissions_Project" target="_blank">
-          <img class="project-image" src="https://cdn-icons-png.flaticon.com/512/2965/2965567.png" alt="Hospital Readmissions">
-          <h4>Hospital Readmissions</h4>
-          <p class="subtext">Built predictive models to identify hospital readmission risks.</p>
+        <a class="project-card ml" data-aos="fade-up" href="https://github.com/begindeveloper/Credit_Risk_ML_Project" target="_blank">
+          <img class="project-image" src="https://cdn-icons-png.flaticon.com/512/2048/2048574.png" alt="Credit Risk" />
+          <h4>Credit Risk Analysis</h4>
+          <p>Logistic Regression & SMOTE to detect risky borrowers.</p>
           <div class="tags">
             <span class="tag">ML</span>
-            <span class="tag">Jupyter</span>
-          </div>
-        </a>
-
-        <a class="project-card" href="https://github.com/begindeveloper/Customer_Engagement_Analysis_in_Excel_Project" target="_blank">
-          <img class="project-image" src="https://cdn-icons-png.flaticon.com/512/732/732220.png" alt="Excel Project">
-          <h4>Customer Engagement Analysis</h4>
-          <p class="subtext">Exploratory and descriptive analytics using Excel dashboards.</p>
-          <div class="tags">
-            <span class="tag">Excel</span>
-            <span class="tag">Dashboards</span>
-          </div>
-        </a>
-
-        <a class="project-card" href="https://github.com/begindeveloper/Titanic-Machine-Learning-from-Disaster" target="_blank">
-          <img class="project-image" src="https://cdn-icons-png.flaticon.com/512/2048/2048574.png" alt="Titanic ML">
-          <h4>Titanic ML Prediction</h4>
-          <p class="subtext">Used classification models on Titanic survival data.</p>
-          <div class="tags">
-            <span class="tag">ML</span>
-            <span class="tag">Kaggle</span>
-          </div>
-        </a>
-
-        <a class="project-card" href="https://github.com/begindeveloper/Credit_Risk_ML_Project" target="_blank">
-          <img class="project-image" src="https://cdn-icons-png.flaticon.com/512/1372/1372867.png" alt="Credit Risk">
-          <h4>Credit Risk Assessment</h4>
-          <p class="subtext">Credit risk classification using scikit-learn and real data.</p>
-          <div class="tags">
-            <span class="tag">ML</span>
-            <span class="tag">Finance</span>
-          </div>
-        </a>
-
-        <a class="project-card" href="https://github.com/begindeveloper/MentalHealth_Excel_Project" target="_blank">
-          <img class="project-image" src="https://cdn-icons-png.flaticon.com/512/3556/3556600.png" alt="Mental Health">
-          <h4>Mental Health Insights</h4>
-          <p class="subtext">Analyzed mental health survey results in Excel.</p>
-          <div class="tags">
-            <span class="tag">Excel</span>
-            <span class="tag">Analytics</span>
+            <span class="tag">Imbalanced Data</span>
           </div>
         </a>
       </div>
-    </section>
+    </div>
+
+    <div class="project-category" id="excel">
+      <h2>Excel Projects</h2>
+      <div class="project-container">
+        <a class="project-card excel" data-aos="fade-up" href="https://github.com/begindeveloper/MentalHealth_Excel_Project" target="_blank">
+          <img class="project-image" src="https://cdn-icons-png.flaticon.com/512/4381/4381779.png" alt="Mental Health" />
+          <h4>Mental Health Dashboard</h4>
+          <p>Visualized trends and survey results in Excel.</p>
+          <div class="tags">
+            <span class="tag">Excel</span>
+            <span class="tag">Dashboard</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="project-category" id="viz">
+      <h2>Data Visualization</h2>
+      <div class="project-container">
+        <a class="project-card viz" data-aos="fade-up" href="https://github.com/begindeveloper/Tour_De_France-Analysis" target="_blank">
+          <img class="project-image" src="https://images.seeklogo.com/logo-png/44/1/tour-de-france-logo-png_seeklogo-442273.png" alt="Tour de France" />
+          <h4>Tour de France Analysis</h4>
+          <p>Analyzed decades of race data to uncover patterns and stats.</p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">DataViz</span>
+            <span class="tag">Matplotlib</span>
+          </div>
+        </a>
+      </div>
+    </div>
   </main>
+
+  <div class="center">
+    <a class="button" href="index.html">← Back to Home</a>
+  </div>
+
+<script  type="text/javascript" src="../Web-development/app.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
