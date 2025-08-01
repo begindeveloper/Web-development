@@ -2,22 +2,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>All Projects | Eyeson </title>
-    <link rel="stylesheet" href="styles/style.css"/>
-    <link rel="stylesheet" href="styles/dataAnaly.css"/>
+  <title>All Projects | Eyeson</title>
+
+  <!-- Main styles -->
+  <link rel="stylesheet" href="../styles/style.css" />
+  <link rel="stylesheet" href="../styles/dataAnaly.css" />
+
+  <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- AOS (Animate On Scroll) -->
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
+
+  <!-- Navbar -->
   <nav class="navbar">
     <ul class="nav-links">
       <li><a href="#ml">Machine Learning</a></li>
       <li><a href="#excel">Excel Projects</a></li>
       <li><a href="#viz">Data Viz</a></li>
-      <li><a href="index.html">Back to Home</a></li>
+      <li><a href="../index.html">Back to Home</a></li>
     </ul>
   </nav>
 
+  <!-- Filter Buttons -->
   <header class="filters center">
     <button class="filter-btn active" data-filter="all">All</button>
     <button class="filter-btn" data-filter="ml">ML</button>
@@ -25,7 +34,10 @@
     <button class="filter-btn" data-filter="viz">DataViz</button>
   </header>
 
+  <!-- Projects Section -->
   <main class="project-section">
+
+    <!-- ML -->
     <div class="project-category" id="ml">
       <h2>Machine Learning Projects</h2>
       <div class="project-container">
@@ -51,6 +63,7 @@
       </div>
     </div>
 
+    <!-- Excel -->
     <div class="project-category" id="excel">
       <h2>Excel Projects</h2>
       <div class="project-container">
@@ -66,13 +79,14 @@
       </div>
     </div>
 
+    <!-- Data Visualization -->
     <div class="project-category" id="viz">
       <h2>Data Visualization</h2>
       <div class="project-container">
         <a class="project-card viz" data-aos="fade-up" href="https://github.com/begindeveloper/Tour_De_France-Analysis" target="_blank">
           <img class="project-image" src="https://images.seeklogo.com/logo-png/44/1/tour-de-france-logo-png_seeklogo-442273.png" alt="Tour de France" />
           <h4>Tour de France Analysis</h4>
-          <p>Analyzed decades of race data to uncover patterns and stats.</p>
+          <p>Analyzed race data to uncover patterns and performance insights.</p>
           <div class="tags">
             <span class="tag">Python</span>
             <span class="tag">DataViz</span>
@@ -81,10 +95,12 @@
         </a>
       </div>
     </div>
+
   </main>
 
-  <div class="center">
-    <a class="button" href="index.html">← Back to Home</a>
+  <!-- Back Button -->
+  <div class="center" style="margin: 2rem 0;">
+    <a class="button" href="../index.html">← Back to Home</a>
   </div>
 
 <script  type="text/javascript" src="../Web-development/app.js"></script>
