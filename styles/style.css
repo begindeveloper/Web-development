@@ -2,6 +2,8 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  background-color: #CBC3E3; /* same as section */
+  color: #000; /* optional for clarity */
 }
 
 section {
@@ -203,6 +205,18 @@ h3 {
   object-fit: cover;
   border-radius: 10px;
 }
+
+.project-category h3 {
+  text-align: center;
+  background: none; /* Removes any unexpected background */
+  padding: 0.5rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #483983; /* deep purple, adjust to your exact index.html color */
+}
+
 
 .project-card h4 {
   margin-top: 15px;
