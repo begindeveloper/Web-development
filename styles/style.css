@@ -226,34 +226,36 @@ h3 {
   margin-bottom: 20px;
 }
 
+/* Container for all project cards */
 .project-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Creates a responsive grid */
+    gap: 30px; /* Spacing between cards */
 }
 
+/* Style for the individual project card */
 .project-card {
-  background: #fff;
-  border: 1px solid #ddd;
-  width: 300px;
-  padding: 20px;
-  text-align: center;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden; /* Ensures image corners are also rounded */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none; /* Removes the underline from the link */
+    color: inherit;
+    padding: 20px;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    transform: translateY(-10px); /* Lifts the card on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.project-image {
-  height: 180px;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 10px;
+.project-card .project-image {
+    width: 100%;
+    height: 200px; /* Fixed height for consistent look */
+    object-fit: cover; /* Ensures image fills the space without distortion */
+    border-radius: 5px;
+    margin-bottom: 15px;
 }
 
 .project-category h3 {
@@ -265,15 +267,37 @@ h3 {
 
 
 .project-card h4 {
-  margin-top: 15px;
-  font-size: 1.3rem;
-  color: #a46614;
+    margin: 0 0 10px 0;
+    font-size: 1.25rem;
+    color: #333;
 }
 
 .project-card p {
   font-size: 0.9rem;
   margin: 10px 0;
   color: #333;
+}
+
+.project-card .subtext {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+/* Style for the tags container */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+/* Style for individual tags */
+.tag {
+    background-color: #e9e9e9;
+    color: #555;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    border-radius: 20px; /* Rounded corners for a badge look */
+    font-weight: 600;
 }
 
 .tags span {
@@ -589,4 +613,37 @@ h3 {
 .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+
+/* Style for the filter buttons */
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Adds space between buttons */
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    border: 2px solid #ccc;
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 25px; /* Makes buttons rounded */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.filter-btn:hover {
+    background-color: #eee;
+    transform: translateY(-2px); /* Lifts the button slightly on hover */
+}
+
+/* Style for the active button */
+.filter-btn.active {
+    background-color: #007bff; /* A nice accent color */
+    color: #fff;
+    border-color: #007bff;
 }
