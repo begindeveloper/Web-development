@@ -1,51 +1,46 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>All Projects | Eyeson</title>
-  <!-- Main styles -->
+  <title>Data Analysis Projects</title>
+
+  <!-- AOS Animation Library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="../styles/style.css" />
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <!-- AOS (Animate On Scroll) -->
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Favicon (optional) -->
+  <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
 </head>
+
 <body>
-
-  <!-- Navbar -->
+  <!-- NAVBAR -->
   <nav class="navbar">
-    <a href="#">
-      <img class="logo" src="./images/BW and Color logos-04.png" alt="Mary Eyeson's Logo" />
-    </a>
-    <button class="hamburger" onclick="toggleMenu()">
-      <i class="fas fa-bars"></i>
-    </button>
-    <ul class="nav-links">
-      <li><a href="#ml">Machine Learning & Python</a></li>
-      <li><a href="#sql">SQL & Python</a></li>
-      <li><a href="#excel">Excel & Python</a></li>
-      <li><a href="#viz">Data Viz</a></li>
-      <li><a href="../index.html">Back to Home</a></li>
-    </ul>
-    <!-- Dark mode toggle  <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>-->
+    <div class="nav-content">
+      <a href="../index.html" class="logo">Begin Developer</a>
+      <ul class="nav-links">
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#projects">Projects</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+      <button id="darkModeToggle" class="dark-mode-btn">🌙</button>
+    </div>
   </nav>
-  <div class="theme-toggle center">
-  <button class="button" onclick="toggleDarkMode()">🌙</button>
-</div>
 
-  <!-- Filter Buttons -->
-  <header class="filters center">
-    <button class="filter-btn active" data-filter="all">All</button>
-    <button class="filter-btn" data-filter="ml">ML</button>
-    <button class="filter-btn" data-filter="excel">Excel</button>
-    <button class="filter-btn" data-filter="viz">DataViz</button>
-  </header>
-
-  <!-- Projects Section -->
   <main class="project-section">
+    <header class="section-header">
+      <h1 data-aos="fade-down">Data Science & Analysis Projects</h1>
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="excel">Excel</button>
+        <button class="filter-btn" data-filter="ml">ML</button>
+      </div>
+    </header>
 
-    <!-- ML -->
-    <div class="project-category" id="ml">
+    <!-- PROJECT CATEGORIES -->
+    <section class="project-category">
       <h2>Machine Learning Projects</h2>
       <div class="project-container">
         <a class="project-card ml" data-aos="fade-up" href="https://github.com/begindeveloper/Titanic-Machine-Learning-from-Disaster" target="_blank">
@@ -68,10 +63,9 @@
           </div>
         </a>
       </div>
-    </div>
+    </section>
 
-    <!-- Excel -->
-    <div class="project-category" id="excel">
+    <section class="project-category">
       <h2>Excel Projects</h2>
       <div class="project-container">
         <a class="project-card excel" data-aos="fade-up" href="https://github.com/begindeveloper/MentalHealth_Excel_Project" target="_blank">
@@ -84,16 +78,15 @@
           </div>
         </a>
       </div>
-    </div>
+    </section>
 
-    <!-- Data Visualization -->
-    <div class="project-category" id="viz">
+    <section class="project-category">
       <h2>Data Visualization</h2>
       <div class="project-container">
-        <a class="project-card viz" data-aos="fade-up" href="https://github.com/begindeveloper/Tour_De_France-Analysis" target="_blank">
+        <a class="project-card" data-aos="fade-up" href="https://github.com/begindeveloper/Tour_De_France-Analysis" target="_blank">
           <img class="project-image" src="https://images.seeklogo.com/logo-png/44/1/tour-de-france-logo-png_seeklogo-442273.png" alt="Tour de France" />
           <h4>Tour de France Analysis</h4>
-          <p>Analyzed race data to uncover patterns and performance insights.</p>
+          <p>Analyzed decades of cycling data and visualized trends.</p>
           <div class="tags">
             <span class="tag">Python</span>
             <span class="tag">DataViz</span>
@@ -101,30 +94,26 @@
           </div>
         </a>
       </div>
-    </div>
+    </section>
 
+    <!-- BACK BUTTON -->
+    <div class="center">
+      <a class="button" href="../index.html">← Back to Home</a>
+    </div>
   </main>
 
   <!-- FOOTER -->
-<footer id="contact-me" class="footer">
-  <div class="footer-container">
-    <p class="copyright">© 2025 Mary Eyeson. All rights reserved.</p>
-  </div>
-  <!-- Back Button -->
-  <div class="center" style="margin: 2rem 0;">
-    <a class="button" href="../index.html">← Back to Home</a>
-  </div>
-</footer>
+  <footer class="footer">
+    <p>© 2025 Begin Developer. All rights reserved.</p>
+  </footer>
 
 
-<script  type="text/javascript" src="../Web-development/app.js"></script>
-    <script src="https://kit.fontawesome.com/fa3a317125.js" crossorigin="anonymous"></script>
-    <!-- AOS JS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- AOS JS -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+  <!-- AOS and JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="../app.js"></script>
 </body>
 </html>
+
