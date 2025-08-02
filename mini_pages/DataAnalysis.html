@@ -1,115 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Data Analysis Projects</title>
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
-  <link rel="stylesheet" href="../styles/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Analysis Projects</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Open+Sans:wght@300;400&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script defer src="../app.js"></script>
 </head>
 
 <body>
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <div class="container nav-content">
-      <a href="../index.html">
-        <img class="logo" src="../images/BW and Color logos-04.png" alt="Mary Eyeson's Logo" />
-      </a>
-      <ul class="nav-links">
-        <li><a href="../index.html#about">About Me</a></li>
-        <li><a href="../index.html#projects">Projects</a></li>
-        <li><a href="../index.html#contact">Contact Me</a></li>
-      </ul>
-      <div class="theme-toggle center">
-          <button class="button" onclick="toggleDarkMode()">🌙</button>
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="../index.html">
+                <img class="logo" src="../images/BW and Color logos-04.png" alt="Mary Eyeson's Logo" />
+            </a>
+            <ul class="nav-links">
+                <li><a href="../index.html#about-me">About Me</a></li>
+                <li><a href="../index.html#certifications">Certifications</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#contact-me">Contact Me</a></li>
+            </ul>
+            <div class="theme-toggle center">
+                <button class="button" onclick="toggleDarkMode()">🌙</button>
+            </div>
         </div>
-    </div>
-  </nav>
+    </nav>
 
-  <!-- MAIN CONTENT -->
-  <main>
-    <header class="page-header">
-      <h1 class="fade-in">Data Science & Analysis Projects</h1>
-    </header>
+    <section id="projects" class="sub-section-alternative">
+        <h2>Data Science & Analysis Projects</h2>
 
-<!-- Main Projects -->
-<section id="projects" class="sub-section-alternative">
-    <div class="filters">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="excel">Excel</button>
-        <button class="filter-btn" data-filter="ml">ML</button>
-        <button class="filter-btn" data-filter="python">Python</button>
-    </div>
-    <h2>Projects</h2>
-
-    <div class="project-category" data-category="ml">
-        <h3>Python & Machine Learning</h3>
         <div class="project-container">
-            <div class="project-card" data-aos="fade-up">
-                <img class="project-image" src="https://cdn-icons-png.flaticon.com/512/4596/4596976.png" alt="Titanic Project" />
-                <h4><a href="https://github.com/begindeveloper/Titanic-Machine-Learning-from-Disaster" target="_blank">Titanic ML</a></h4>
-                <p class="subtext">Applied classification techniques to predict survival from Titanic dataset on Kaggle.</p>
-                <div class="tags">
-                    <span class="tag">Kaggle</span>
-                    <span class="tag">Python</span>
-                    <span class="tag">ML</span>
+            <a href="https://github.com/begindeveloper/Titanic-Machine-Learning-from-Disaster" class="project-card-link" target="_blank" data-aos="fade-up">
+                <div class="project-card">
+                    <img class="project-image" src="https://cdn-icons-png.flaticon.com/512/4596/4596976.png" alt="Titanic Project" />
+                    <h3>Titanic Machine Learning</h3>
+                    <p class="subtext">Applied classification techniques to predict survival rates from the Titanic dataset on Kaggle.</p>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">Kaggle</span>
+                    </div>
                 </div>
-            </div>
-            </div>
-    </div>
+            </a>
 
-    <div class="project-category" data-category="excel">
-        <h3>Excel & Python Projects</h3>
-        <div class="project-container">
-            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-                <img class="project-image" src="https://cdn-icons-png.flaticon.com/512/4381/4381779.png" alt="Excel Project" />
-                <h4><a href="https://github.com/begindeveloper/MentalHealth_Excel_Project" target="_blank">Mental Health Dashboard</a></h4>
-                <p class="subtext">Analyzed mental health survey data and visualized findings with Excel dashboards.</p>
-                <div class="tags">
-                    <span class="tag">Excel</span>
-                    <span class="tag">Dashboards</span>
-                    <span class="tag">Visualization</span>
+            <a href="https://github.com/begindeveloper/MentalHealth_Excel_Project" class="project-card-link" target="_blank" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-card">
+                    <img class="project-image" src="https://cdn-icons-png.flaticon.com/512/4381/4381779.png" alt="Excel Project" />
+                    <h3>Mental Health Dashboard</h3>
+                    <p class="subtext">Analyzed mental health survey data and visualized findings with Excel dashboards.</p>
+                    <div class="tags">
+                        <span class="tag">Excel</span>
+                        <span class="tag">Dashboards</span>
+                        <span class="tag">Data Visualization</span>
+                    </div>
                 </div>
+            </a>
+
             </div>
-            </div>
-    </div>
     </section>
-  </main>
 
-  <!-- FOOTER -->
-  <footer id="contact-me" class="footer">
-  <div class="footer-container">
-    <h2>Contact Me</h2>
-    <div class="footer-grid">
-      <div class="footer-item" data-aos="fade-up" data-aos-delay="100">
-        <i class="fa-solid fa-globe footer-icon"></i>
-        <p><span>Portfolio Website:</span> <a href="https://begindeveloper.github.io/Web-development/" target="_blank">Portfolio</a></p>
-      </div>
-      <div class="footer-item" data-aos="fade-up" data-aos-delay="100">
-        <i class="fa-brands fa-github footer-icon"></i>
-        <p><span>Github:</span> <a href="https://github.com/begindeveloper" target="_blank">begindeveloper</a></p>
-      </div>
-      <div class="footer-item" data-aos="fade-up" data-aos-delay="100">
-        <i class="fa fa-map-marker footer-icon"></i>
-        <p><span>Location:</span> Dallas, TX, USA</p>
-      </div>
-      <div class="footer-item" data-aos="fade-up" data-aos-delay="100">
-        <i class="fa fa-paper-plane footer-icon"></i>
-        <p><span>Email:</span> <a href="mailto:msa.eyeson@gmail.com">msa.eyeson@gmail.com</a></p>
-      </div>
-    </div>
-    <p class="copyright">© 2025 Mary Eyeson. All rights reserved.</p>
-  </div>
-</footer>
+    <footer id="contact-me" class="footer">
+        <div class="footer-container">
+            <h2>Contact Me</h2>
+            <div class="footer-grid">
+                <div class="footer-item" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fa-solid fa-globe footer-icon"></i>
+                    <p><span>Portfolio Website:</span> <a href="https://begindeveloper.github.io/Web-development/" target="_blank">Portfolio</a></p>
+                </div>
+                <div class="footer-item" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fa-brands fa-github footer-icon"></i>
+                    <p><span>Github:</span> <a href="https://github.com/begindeveloper" target="_blank">begindeveloper</a></p>
+                </div>
+                <div class="footer-item" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fa fa-map-marker footer-icon"></i>
+                    <p><span>Location:</span> Dallas, TX, USA</p>
+                </div>
+                <div class="footer-item" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fa fa-paper-plane footer-icon"></i>
+                    <p><span>Email:</span> <a href="mailto:msa.eyeson@gmail.com">msa.eyeson@gmail.com</a></p>
+                </div>
+            </div>
+            <p class="copyright">© 2025 Mary Eyeson. All rights reserved.</p>
+        </div>
+    </footer>
 
-  
-  <script>
-    AOS.init({ duration: 1000 });
-  </script>
+    <script src="https://kit.fontawesome.com/fa3a317125.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
