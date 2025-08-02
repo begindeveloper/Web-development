@@ -255,10 +255,15 @@ h3 {
     display: block;
 }
 
+/* Project cards container within each category */
 .project-container {
     display: grid;
+    /* Create a responsive grid with a minimum card width of 300px */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
+    justify-content: center; /* Center the grid items horizontally */
+    max-width: 1200px; /* Optional: Set a max width for the grid to keep it from getting too wide on large screens */
+    margin: 0 auto; /* Center the entire project container */
 }
 
 .project-card {
