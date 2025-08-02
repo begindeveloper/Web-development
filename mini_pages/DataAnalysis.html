@@ -3,14 +3,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>All Projects | Eyeson</title>
-
   <!-- Main styles -->
   <link rel="stylesheet" href="../styles/style.css" />
   <link rel="stylesheet" href="../styles/dataAnaly.css" />
-
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
   <!-- AOS (Animate On Scroll) -->
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 </head>
@@ -18,9 +15,13 @@
 
   <!-- Navbar -->
   <nav class="navbar">
+    <a href="#">
+      <img class="logo" src="./images/BW and Color logos-04.png" alt="Mary Eyeson's Logo" />
+    </a>
     <ul class="nav-links">
-      <li><a href="#ml">Machine Learning</a></li>
-      <li><a href="#excel">Excel Projects</a></li>
+      <li><a href="#ml">Machine Learning & Python</a></li>
+      <li><a href="#sql">SQL & Python</a></li>
+      <li><a href="#excel">Excel & Python</a></li>
       <li><a href="#viz">Data Viz</a></li>
       <li><a href="../index.html">Back to Home</a></li>
     </ul>
@@ -29,17 +30,23 @@
             <i class="fa-solid fa-bars"></i>
           </button>
       
-          <!-- Dark mode toggle -->
-          <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>
+    <!-- Dark mode toggle -->
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>
+    <div class="filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="ml">ML</button>
+    <button class="filter-btn" data-filter="excel">Excel</button>
+    <button class="filter-btn" data-filter="viz">DataViz</button>
+  </div>
   </nav>
 
-  <!-- Filter Buttons -->
+  <!-- Filter Buttons 
   <header class="filters center">
     <button class="filter-btn active" data-filter="all">All</button>
     <button class="filter-btn" data-filter="ml">ML</button>
     <button class="filter-btn" data-filter="excel">Excel</button>
     <button class="filter-btn" data-filter="viz">DataViz</button>
-  </header>
+  </header> -->
 
   <!-- Projects Section -->
   <main class="project-section">
