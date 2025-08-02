@@ -10,36 +10,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Open+Sans:wght@300;400&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <!-- AOS CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-        <!-- AOS CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
     
 <body>
     <section class="hero fade-in">
-        <nav>
-          <a href="#">
-              <img class="logo" src="./images/BW and Color logos-04.png" alt="Mary Eyeson's Logo" />
-          </a>
-            <button class="hamburger" onclick="toggleMenu()">
-                <i class="fas fa-bars"></i>
-            </button>
-          <ul id="nav-list">
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-           <li><a href="#projects">Projects</a></li>
-            <!--<li><a href="mini-projects.html">Projects</a></li> -->
-            <li><a href="#contact-me">Contact Me</a></li>
-          </ul>
-          <!-- Dark mode toggle    <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>-->
-        </nav>
-        
-         <div class="theme-toggle center">
-          <button class="button" onclick="toggleDarkMode()">🌙</button>
-        </div>
+ <nav class="navbar">
+  <div class="container nav-content">
+    <a href="index.html">
+      <img class="logo" src="./images/BW and Color logos-04.png" alt="Mary Eyeson's Logo" />
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about-me">About Me</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact-me">Contact Me</a></li>
+    </ul>
+    <div class="theme-toggle center">
+      <button class="button" onclick="toggleDarkMode()">🌙</button>
+    </div>
+  </div>
+</nav>
 
         
         <div class="hero-area">
