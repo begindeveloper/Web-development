@@ -2,119 +2,81 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Data_Analysis Projects</title>
-
-  <!-- AOS -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="../styles/style.css" />
-
-  <!-- Favicon -->
-  <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Data Analysis Projects</title>
+  <link rel="stylesheet" href="../style.css" />
+  <script defer src="../app.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 </head>
+
 <body>
   <!-- NAVBAR -->
-<nav class="navbar">
-  <div class="container nav-content">
-    <a href="../index.html">
-      <img class="logo" src="../images/BW and Color logos-04.png" alt="Mary Eyeson's Logo" />
-    </a>
-    <ul class="nav-links">
-      <li><a href="../index.html#about">About Me</a></li>
-      <li><a href="../index.html#projects">Projects</a></li>
-      <li><a href="../index.html#contact">Contact Me</a></li>
-    </ul>
-    <button id="darkModeToggle" class="dark-mode-btn">🌙</button>
-  </div>
-</nav>
+  <nav class="navbar">
+    <div class="container nav-content">
+      <a href="../index.html">
+        <img class="logo" src="../images/BW and Color logos-04.png" alt="Mary Eyeson's Logo" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html#about">About Me</a></li>
+        <li><a href="../index.html#projects">Projects</a></li>
+        <li><a href="../index.html#contact">Contact Me</a></li>
+      </ul>
+      <div class="toggle-switch">
+        <input type="checkbox" id="theme-toggle" />
+        <label for="theme-toggle" class="switch"></label>
+      </div>
+    </div>
+  </nav>
 
+  <!-- MAIN CONTENT -->
+  <main>
+    <header class="page-header">
+      <h1 class="fade-in">Data Science & Analysis Projects</h1>
+    </header>
 
-  <!-- MAIN PROJECT SECTION -->
-  <main class="project-section">
-    <header class="section-header">
-      <h2 data-aos="fade-down">Data Science & Analysis Projects</h2>
+    <section class="project-section">
+      <!-- Filter Buttons -->
       <div class="filters">
         <button class="filter-btn active" data-filter="all">All</button>
         <button class="filter-btn" data-filter="excel">Excel</button>
         <button class="filter-btn" data-filter="ml">ML</button>
       </div>
-    </header>
 
-    <!-- ML PROJECTS -->
-    <section class="project-category">
-      <h3>Machine Learning Projects</h3>
+      <!-- Section Heading -->
+      <h3 class="fade-in">Machine Learning Projects</h3>
+
+      <!-- Project Cards -->
       <div class="project-container">
-        <a class="project-card ml" data-aos="fade-up" href="https://github.com/begindeveloper/Titanic-Machine-Learning-from-Disaster" target="_blank">
-          <img class="project-image" src="https://cdn-icons-png.flaticon.com/512/4596/4596976.png" alt="Titanic ML" />
-          <h4>Titanic ML</h4>
-          <p>Predict survival using logistic regression & decision trees.</p>
-          <div class="tags">
-            <span class="tag">ML</span>
-            <span class="tag">Python</span>
-          </div>
-        </a>
+        <div class="project-card ml" data-aos="fade-up">
+          <img class="project-image" src="../images/titanic.png" alt="Titanic Project" />
+          <h4><a href="#">Titanic ML</a></h4>
+        </div>
 
-        <a class="project-card ml" data-aos="fade-up" href="https://github.com/begindeveloper/Credit_Risk_ML_Project" target="_blank">
-          <img class="project-image" src="https://cdn-icons-png.flaticon.com/512/2048/2048574.png" alt="Credit Risk" />
-          <h4>Credit Risk Analysis</h4>
-          <p>Logistic Regression & SMOTE to detect risky borrowers.</p>
-          <div class="tags">
-            <span class="tag">ML</span>
-            <span class="tag">Imbalanced Data</span>
-          </div>
-        </a>
+        <div class="project-card ml" data-aos="fade-up" data-aos-delay="100">
+          <img class="project-image" src="../images/creditrisk.png" alt="Credit Risk Project" />
+          <h4><a href="#">Credit Risk Analysis</a></h4>
+        </div>
+
+        <!-- Excel Projects -->
+        <div class="project-card excel" data-aos="fade-up" data-aos-delay="200">
+          <img class="project-image" src="../images/excelproject.png" alt="Excel Project" />
+          <h4><a href="#">HR Analytics (Excel)</a></h4>
+        </div>
       </div>
     </section>
-
-    <!-- EXCEL PROJECTS -->
-    <section class="project-category">
-      <h3>Excel Projects</h3>
-      <div class="project-container">
-        <a class="project-card excel" data-aos="fade-up" href="https://github.com/begindeveloper/MentalHealth_Excel_Project" target="_blank">
-          <img class="project-image" src="https://cdn-icons-png.flaticon.com/512/4381/4381779.png" alt="Mental Health" />
-          <h4>Mental Health Dashboard</h4>
-          <p>Visualized trends and survey results in Excel.</p>
-          <div class="tags">
-            <span class="tag">Excel</span>
-            <span class="tag">Dashboard</span>
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <!-- DATAVIZ PROJECT -->
-    <section class="project-category">
-      <h3>Data Visualization</h3>
-      <div class="project-container">
-        <a class="project-card" data-aos="fade-up" href="https://github.com/begindeveloper/Tour_De_France-Analysis" target="_blank">
-          <img class="project-image" src="https://images.seeklogo.com/logo-png/44/1/tour-de-france-logo-png_seeklogo-442273.png" alt="Tour de France" />
-          <h4>Tour de France Analysis</h4>
-          <p>Analyzed decades of cycling data and visualized trends.</p>
-          <div class="tags">
-            <span class="tag">Python</span>
-            <span class="tag">DataViz</span>
-            <span class="tag">Matplotlib</span>
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <!-- BACK BUTTON -->
-    <div class="center">
-      <a class="button small" href="../index.html">← Back to Home</a>
-    </div>
   </main>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <p>© 2025 Mary Eyeson. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; Mary Eyeson — All rights reserved.</p>
+    </div>
   </footer>
 
-  <!-- JS + AOS -->
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script>AOS.init();</script>
-  <script src="../app.js"></script>
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000 });
+  </script>
 </body>
 </html>
