@@ -112,6 +112,50 @@ p {
   padding-right: 15px;
 }
 
+
+/* Mini Page */
+.navbar {
+  background-color: transparent; /* or whatever you want */
+  padding: 10px 5vw;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #483983;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: chocolate;
+}
+
+.dark-mode-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+
+
+
+
 /* About Section */
 .about-container {
   display: flex;
