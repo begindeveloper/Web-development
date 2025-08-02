@@ -10,11 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Open+Sans:wght@300;400&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <!-- AOS CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-        <!-- AOS CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <script defer src="../app.js"></script>
 </head>
 
@@ -83,19 +78,36 @@
             </div>
             </div>
     </div>
-    
     </section>
   </main>
 
   <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; Mary Eyeson — All rights reserved.</p>
+  <footer id="contact-me" class="footer">
+  <div class="footer-container">
+    <h2>Contact Me</h2>
+    <div class="footer-grid">
+      <div class="footer-item" data-aos="fade-up" data-aos-delay="100">
+        <i class="fa-solid fa-globe footer-icon"></i>
+        <p><span>Portfolio Website:</span> <a href="https://begindeveloper.github.io/Web-development/" target="_blank">Portfolio</a></p>
+      </div>
+      <div class="footer-item" data-aos="fade-up" data-aos-delay="100">
+        <i class="fa-brands fa-github footer-icon"></i>
+        <p><span>Github:</span> <a href="https://github.com/begindeveloper" target="_blank">begindeveloper</a></p>
+      </div>
+      <div class="footer-item" data-aos="fade-up" data-aos-delay="100">
+        <i class="fa fa-map-marker footer-icon"></i>
+        <p><span>Location:</span> Dallas, TX, USA</p>
+      </div>
+      <div class="footer-item" data-aos="fade-up" data-aos-delay="100">
+        <i class="fa fa-paper-plane footer-icon"></i>
+        <p><span>Email:</span> <a href="mailto:msa.eyeson@gmail.com">msa.eyeson@gmail.com</a></p>
+      </div>
     </div>
-  </footer>
+    <p class="copyright">© 2025 Mary Eyeson. All rights reserved.</p>
+  </div>
+</footer>
 
-  <!-- AOS Script -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  
   <script>
     AOS.init({ duration: 1000 });
   </script>
