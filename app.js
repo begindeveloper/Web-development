@@ -1,28 +1,19 @@
-var hamburger = document.querySelector('#hamburger');
-var navList = document.querySelector('#nav-list');
-
-
-hamburger.addEventListener('click', function(){
-    document.querySelector('#nav-list').classList.toggle("show")
-})
+function toggleMenu() {
+  document.querySelector('.nav-links').classList.toggle('show');
+}
 
 // dark mode
 function toggleDarkMode() {
-    document.body.classList.toggle("dark-mode");
-    // Save preference
-    if (document.body.classList.contains("dark-mode")) {
-      localStorage.setItem("theme", "dark");
-    } else {
-      localStorage.setItem("theme", "light");
-    }
-  }
+  document.body.classList.toggle('dark-mode');
+  localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+}
 
-  // Load saved preference
-  window.onload = function () {
-    if (localStorage.getItem("theme") === "dark") {
-      document.body.classList.add("dark-mode");
-    }
-  };
+window.onload = () => {
+  if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark-mode');
+  }
+};
+
 
 // switch flicker
 document.querySelector('.switch')
@@ -80,7 +71,13 @@ const filterButtons = document.querySelectorAll('.filter-btn');
  //    });
  //  }
 
+//var hamburger = document.querySelector('#hamburger');
+//var navList = document.querySelector('#nav-list');
 
+
+//hamburger.addEventListener('click', function(){
+   // document.querySelector('#nav-list').classList.toggle("show")
+//})
    // const buttons = document.querySelectorAll('.filter-btn');
    // const cards = document.querySelectorAll('.project-card');
 
