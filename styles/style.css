@@ -99,6 +99,12 @@ li:hover a {
     color: chocolate;
 }
 
+.logo {
+  width: 150px; /* Adjust this value to make the logo smaller or larger */
+  height: auto; /* This keeps the image proportional */
+  /* You can also add other styles here, like margins:  margin-top: 10px;*/
+}
+
 /* Hero Section */
 .hero {
     background-color: #C3B1E1;
