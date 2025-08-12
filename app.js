@@ -1,104 +1,79 @@
-// Toggle mobile menu
-function toggleMenu() {
-  document.querySelector('.nav-links').classList.toggle('show');
-}
+document.addEventListener('DOMContentLoaded', function() {
+    // ---- 1. Mobile Menu Toggle ----
+    // Select the hamburger button and the navigation list
+    const hamburger = document.querySelector('#hamburger');
+    const navLinks = document.querySelector('.nav-links');
 
-// Dark mode toggle
-function toggleDarkMode() {
-  document.body.classList.toggle('dark-mode');
-  localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
-}
-
-// Set theme on page load
-window.onload = () => {
-  if (localStorage.getItem('theme') === 'dark') {
-    document.body.classList.add('dark-mode');
-  }
-
-  // Attach dark mode button event
-  const darkToggleBtn = document.getElementById('darkModeToggle');
-  if (darkToggleBtn) {
-    darkToggleBtn.addEventListener('click', toggleDarkMode);
-  }
-};
-
-// Unused switch flicker (this line does nothing as-is)
-document.querySelector('.switch'); // Can be removed or connected to something
-
-// Fade-in animation on scroll
-const faders = document.querySelectorAll('.fade-in');
-const appearOnScroll = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
+    if (hamburger && navLinks) {
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
     }
-  });
-}, { threshold: 0.1 });
 
-faders.forEach(fader => {
-  appearOnScroll.observe(fader);
-});
+    // ---- 2. Dark Mode Toggle ----
+    // Select the dark mode toggle button
+    const darkToggleBtn = document.getElementById('darkModeToggle');
 
-// Filter project cards
-const filterButtons = document.querySelectorAll('.filter-btn');
-const projectCards = document.querySelectorAll('.project-card');
+    // Function to toggle dark mode
+    function toggleDarkMode() {
+        document.body.classList.toggle('dark-mode');
+        // Save the user's preference to local storage
+        localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+    }
 
-filterButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const filter = button.dataset.filter;
+    // Set the theme on page load based on local storage
+    if (localStorage.getItem('theme') === 'dark') {
+        document.body.classList.add('dark-mode');
+    }
 
-    filterButtons.forEach(btn => btn.classList.remove('active'));
-    button.classList.add('active');
+    // Attach the event listener to the dark mode button
+    if (darkToggleBtn) {
+        darkToggleBtn.addEventListener('click', toggleDarkMode);
+    }
 
-    projectCards.forEach(card => {
-      if (filter === 'all' || card.classList.contains(filter)) {
-        card.style.display = 'flex';
-      } else {
-        card.style.display = 'none';
-      }
+    // ---- 3. Project Card Filtering ----
+    // Select all filter buttons and project cards
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card-link');
+
+    // Add click event listener to each filter button
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Get the filter category from the data attribute
+            const filter = button.dataset.filter;
+
+            // Remove 'active' class from all buttons and add it to the clicked one
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            // Iterate through all project cards and show/hide them based on the filter
+            projectCards.forEach(card => {
+                const category = card.dataset.category;
+
+                // This logic only affects elements with the class 'project-card-link'.
+                // The footer is a separate element and is not affected by this logic.
+                if (filter === 'all' || category === filter) {
+                    card.style.display = 'block'; // Show the card
+                } else {
+                    card.style.display = 'none'; // Hide the card
+                }
+            });
+        });
     });
-  });
+
+    // ---- 4. Fade-in Animation on Scroll ----
+    const fadeInElements = document.querySelectorAll('.fade-in');
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target); // Stop observing once it's visible
+            }
+        });
+    }, { threshold: 0.1 }); // Trigger when 10% of the element is visible
+
+    fadeInElements.forEach(element => {
+        observer.observe(element);
+    });
 });
-
-
-
-
-//const faders = document.querySelectorAll('.fade-in');const appearOnScroll = new IntersectionObserver((entries, observer) => {entries.forEach(entry => {if (entry.isIntersecting) {entry.target.classList.add('visible'); observer.unobserve(entry.target);}});}, {threshold: 0.1});faders.forEach(fader => {
-    //appearOnScroll.observe(fader);
-  //   function filterProjects(category) {
- //    const allCards = document.querySelectorAll('.project-card');
- //    allCards.forEach(card => {
-  //     if (category === 'all' || card.classList.contains(category)) {
-   //      card.style.display = 'block';
-   //    } else {
-    //     card.style.display = 'none';
-   //    }
- //    });
- //  }
-
-//var hamburger = document.querySelector('#hamburger');
-//var navList = document.querySelector('#nav-list');
-
-
-//hamburger.addEventListener('click', function(){
-   // document.querySelector('#nav-list').classList.toggle("show")
-//})
-   // const buttons = document.querySelectorAll('.filter-btn');
-   // const cards = document.querySelectorAll('.project-card');
-
-  //  buttons.forEach(btn => {
-   //    btn.addEventListener('click', () => {
-     //    buttons.forEach(b => b.classList.remove('active'));
-     //    btn.classList.add('active');
-     //    const filter = btn.dataset.filter;
-     //    cards.forEach(card => {
-      //     if (filter === 'all' || card.classList.contains(filter)) {
-       //      card.style.display = 'block';
-      //     } else {
-      //       card.style.display = 'none';
-     //      }
-     //    });
-    //   });
-  //   });
-// }); //
